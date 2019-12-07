@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".choose_menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/out"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="5sp"
+            android:text="메뉴 선택"
+            android:textColor="@color/main"
+            android:textSize="25sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="20sp"
+            android:background="#000000"></TextView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="160sp"
+            android:layout_marginBottom="30sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20sp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/ib_1"
+                        android:layout_width="80sp"
+                        android:layout_height="100sp"
+                        android:layout_marginRight="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/chicken"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/ib_2"
+                        android:layout_width="80sp"
+                        android:layout_height="100sp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/korean"></ImageButton>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginRight="20sp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/ib_3"
+                        android:layout_width="80sp"
+                        android:layout_height="100sp"
+                        android:layout_marginRight="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/hamburg"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/ib_4"
+                        android:layout_width="80sp"
+                        android:layout_height="100sp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/china"></ImageButton>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginRight="20sp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/ib_5"
+                        android:layout_width="80sp"
+                        android:layout_height="100sp"
+                        android:layout_marginRight="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/pig"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/ib_6"
+                        android:layout_width="80sp"
+                        android:layout_height="100sp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/pizza"></ImageButton>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginRight="20sp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageButton
+                        android:id="@+id/ib_7"
+                        android:layout_width="80sp"
+                        android:layout_height="100sp"
+                        android:layout_marginRight="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/seafood"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/ib_8"
+                        android:layout_width="80sp"
+                        android:layout_height="100sp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/snack"></ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="10sp"
+            android:layout_weight="3"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="1순위"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="2순위"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="3순위"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_weight="3"
+            >
+            <ImageView
+                android:id="@+id/show1"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:layout_weight="1"
+                android:src="@drawable/blank"
+                ></ImageView>
+            <ImageView
+                android:id="@+id/show2"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:layout_weight="1"
+                android:src="@drawable/blank"></ImageView>
+            <ImageView
+                android:id="@+id/show3"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:layout_weight="1"
+                android:src="@drawable/blank"></ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
